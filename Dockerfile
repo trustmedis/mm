@@ -11,7 +11,7 @@ WORKDIR ${BASEDIR}
 RUN apk add --no-cache git
 
 #checkout code
-RUN git clone https://github.com/havfo/${MM}.git
+RUN git clone --single-branch --branch feat-mediasoup-v3 https://github.com/havfo/${MM}.git
 
 #install app dep
 WORKDIR ${BASEDIR}/${MM}/app
