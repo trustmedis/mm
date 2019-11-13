@@ -4,7 +4,7 @@ services:
 # multiparty-meeting
   mm:
     env_file: .env
-    image: misi/mm:v3
+    image: misi/mm:v3.1
     build:
       args:
         - BASEDIR=${BASEDIR}
