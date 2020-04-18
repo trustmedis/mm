@@ -37,7 +37,7 @@ services:
     hostname: ouroboros
     image: pyouroboros/ouroboros
     environment:
-      - CLEANUP=true
+      - CLEANUP=false
       - INTERVAL=300
       - LOG_LEVEL=info
       - SELF_UPDATE=true
